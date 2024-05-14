@@ -10,7 +10,7 @@ pipeline {
         stage('Clone') {
             steps {
                 timeout(time: 2, unit: 'MINUTES'){
-                    git branch: 'main', credentialsId: ''
+                    git branch: 'main', credentialsId: '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', url 'https://github.com/Andrepaolo/testlink1.git'
                 }
             }
         }
